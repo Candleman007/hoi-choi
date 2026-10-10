@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+
+        body {
+            font-family: "Google Sans", sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- outer div -->
+    <div class="max-w-xl mx-auto rounded-3xl border border-black shadow-2xl p-7 my-8">
+        <!-- inner div  -->
+        <div>
+            <header>
+                <h1 class="text-4xl text-orange-500 text-center py-6">Login</h1>
+            </header>
+            <form action="index.html">
+                <div class="px-[50px]">
+                    <label class="block text-lg">Email</label>
+                    <input type="text" required placeholder="Enter Email"
+                        class="w-full px-4 py-7 border border-black rounded-lg shadow-md">
+                    <label class="block text-lg mt-5">Password</label>
+                    <input type="text" required placeholder="Enter Password"
+                        class="w-full px-4 py-7 border border-black rounded-lg mb-3 shadow-md">
+                    <input type="checkbox"><label>Show Password</label>
+                </div>
+                <div class="px-[50px]">
+                    <button type="submit"
+                        class="bg-orange-500 text-white text-lg w-full py-5 rounded-lg mt-5 hover:bg-black">SIGN
+                        IN</button>
+                </div>
+                <div class="px-[50px] text-center mt-7">
+                    <p>Forgot <a href="#" class="text-blue-700">Username / Passowrd</a> ?</p>
+                    <p>Don't have an account ? <a href="signup.html" class="text-blue-700">Sign up</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

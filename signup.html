@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+
+        body {
+            font-family: "Google Sans", sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="max-w-3xl bg-white p-6 mx-auto rounded-3xl shadow-2xl border border-black my-8">
+        <header class="text-orange-500 text-center text text-5xl font-medium p-6 ">
+            <h1>Sign Up</h1>
+        </header>
+        <form method="post" action="index.html">
+            <div>
+                <!-- Personal Details -->
+                <div class="border border-black p-6 rounded-3xl mt-7 shadow-xl">
+                    <div>
+                        <header class="text-gray-700 text-2xl font-medium py-2">
+                            <h1 >Personal Details</h1>
+                        </header>
+                    </div>
+                    <hr class="text-gray-900 py-2">
+                    <div class="md:grid grid-cols-2 gap-4">
+                        <div>
+                            <label class="block mb-1 text-gray-700 font-medium">First Name</label>
+                            <input type="text" placeholder="eg. John" name="fname" id="fname" required
+                                class="w-full border border-gray-400 rounded px-3 py-1 shadow-md">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-medium mb-1 ">Last Name</label>
+                            <input type="text" placeholder="eg. Doe" name="lname" id="lname" required
+                                class="w-full border border-gray-400 rounded px-3 py-1 shadow-md">
+                        </div>
+                        <div>
+                            <label class="block mb-1 text-gray-700 font-medium">Phone Number</label>
+                            <input type="number" placeholder="eg. 8974152375" required
+                                class="w-full border border-gray-400 rounded px-3 py-1 shadow-md">
+                        </div>
+                        <div>
+                            <label class="block mb-1 text-gray-700 font-medium">Email</label>
+                            <input type="text" placeholder="eg. johndoe@gmail.com" required
+                                class="w-full border border-gray-400 rounded px-3 py-1 shadow-md">
+                        </div>
+                        <div>
+                            <label class="block mb-1 text-gray-700 font-medium">Password</label>
+                            <input type="password" placeholder="eg. john@123" required
+                                class="w-full border border-gray-400 rounded px-3 py-1 shadow-md">
+                        </div>
+                        <div>
+                            <label class="block mb-1 text-gray-700 font-medium">Confirm Password</label>
+                            <input type="password" placeholder="Retype Password" required
+                                class="w-full border border-gray-400 rounded px-3 py-1 shadow-md">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="md:grid grid-cols-3 gap-8 py-4">
+                            <div>
+                                <label class="block mb-1 text-gray-700 font-medium">Age</label>
+                                <input type="number" required class="w-full border border-gray-400 rounded px-3 py-1 shadow-md">
+                            </div>
+                            <div>
+                                <label class="block mb-1 text-gray-700 font-medium">Date Of birth</label>
+                                <input type="date" required class="w-full border border-gray-400 rounded px-3 py-1 shadow-md">
+                            </div>
+                            <div>
+                                <label class="block mb-1 text-gray-700 font-medium">Gender</label>
+                                <input type="radio" name="gender" id="m" required>
+                                <label for="m">Male</label>
+                                <input type="radio" name="gender" id="f">
+                                <label for="f">Female</label>
+                                <input type="radio" name="gender" id="o">
+                                <label for="o">Others</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Personal Details -->
+
+                <!-- Address Details -->
+                <div class="border border-black p-6 rounded-3xl mt-7 shadow-xl">
+                    <header>
+                        <h1 class="text-gray-700 text-2xl font-medium py-2">Address Details</h1>
+                    </header>
+                    <hr class="text-gray-900 py-2">
+                    <div class="md:grid grid-cols-3 gap-3">
+                        <div>
+                            <label class="block mb-1 text-gray-700 font-medium">State</label>
+                            <select required class="w-full border border-gray-400 rounded px-3 py-1 shadow-md">
+                                <option>---Choose a State---</option>
+                                <option>Bihar</option>
+                                <option>Maharashtra</option>
+                                <option>Odisha</option>
+                                <option>West bengal</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block mb-1 text-gray-700 font-medium">City</label>
+                            <select required class="w-full border border-gray-400 rounded px-3 py-1 shadow-md">
+                                <option>---Choose a City---</option>
+                                <option>Kolkata</option>
+                                <option>Mumbai</option>
+                                <option>Patna</option>
+                                <option>Puri</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block mb-1 text-gray-700 font-medium">Pincode</label>
+                            <input type="number" required placeholder="eg. 946728" class="w-full border border-gray-400 rounded px-3 py-1 shadow-md">
+                        </div>
+                    </div>
+                </div>
+                <!-- Address Details -->
+                
+                <!-- Uploading Profile Picture -->
+                <div class="border border-black p-6 rounded-3xl mt-7 shadow-xl">
+                    <header>
+                        <h1 class="text-gray-700 text-2xl font-medium py-2">Upload Profile Picture</h1>
+                    </header>
+                    <hr class="text-gray-900 py-2">
+                    <div>
+                        <label class="block mb-1 text-gray-700 font-medium">Upload Pic</label>
+                        <input type="file" name="avatar" id="avatar" required>
+                        (<small class="text-red-600 font-bold text-sm">Upload limit MAX :  2MB</small>)
+                    </div>
+                </div>
+                <!-- Uploading Profile Picture -->
+
+                <!-- Submit and Reset Button -->
+                <div class="text-center mt-7">
+                    <button type="reset" class="bg-[#FB2C36] text-white font-medium text-lg px-5 py-2 rounded-lg shadow-lg hover:bg-[#C11007] hover:transition hover:delay-30">Reset</button>
+                    <button class="bg-[#31C950] text-white font-medium text-lg px-5 py-2 rounded-lg shadow-lg hover:bg-[#4A5565] hover:transition hover:delay-30">Sign Up</button>
+                </div>
+                <!-- Submit and Reset Button -->
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
